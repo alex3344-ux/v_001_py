@@ -1,0 +1,42 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+        <!-- Team Start -->
+
+        <div>
+            <p style="font-weight: bold;">Предмет Физика</p>
+            <p>Студенты:</p>
+            {% for physic_item in physics %}
+                {{ physic_item }}
+            {% endfor %}
+        </div>
+
+        <div>
+            <p style="font-weight: bold;">Предмет Высшая математика</p>
+            <p>Студенты:</p>
+            {% for mathematic_item in mathematics %}
+                {{ mathematic_item }}
+            {% endfor %}
+        </div>
+
+        <div>
+            <p style="font-weight: bold;">Предмет Информационные технологии</p>
+            <p>Студенты:</p>
+            {% for informationtechnologies_item in informationtechnologies %}
+                {{ informationtechnologies_item }}
+            {% endfor %}
+        </div>
+
+        <div>
+            <p style="font-weight: bold;">Предмет Философия</p>
+            <p>Студенты:</p>
+            {% for philosophy_item in philosophy %}
+                {{ philosophy_item }}
+            {% endfor %}
+        </div>
+        <!-- Team End -->
+{% endblock %}
